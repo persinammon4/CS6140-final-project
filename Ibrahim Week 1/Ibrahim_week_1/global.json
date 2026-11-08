@@ -1,0 +1,66 @@
+{
+  "model_version": "global_v1",
+  "date": "2026-11-02",
+  "features": [
+    "log_words",
+    "log_headers",
+    "log_bullets",
+    "log_bold",
+    "log_code",
+    "refusal"
+  ],
+  "transform": "log(1+count) on 5 counts, refusal 0/1; scale only (root mean square on train), no intercept; trained on both A/B orders",
+  "selection_rule": "lowest validation log loss over grid",
+  "grid": [
+    0.01,
+    0.1,
+    1,
+    10,
+    100,
+    300,
+    1000,
+    3000,
+    10000
+  ],
+  "chosen_lambda": 300.0,
+  "validation": {
+    "accuracy": 0.6024627349319508,
+    "log_loss": 0.6638055095464378,
+    "n_decisive": 7715
+  },
+  "test": {
+    "accuracy": 0.6027910582762631,
+    "log_loss": 0.6631459643272368,
+    "n_decisive": 7739
+  },
+  "baseline_longer_words": {
+    "validation_accuracy": 0.5973907371167645,
+    "n_validation": 7665,
+    "test_accuracy": 0.6006759391654751,
+    "n_test": 7693
+  },
+  "test_same_votes_as_baseline": {
+    "model_accuracy": 0.6039256466917977,
+    "difference_vs_baseline": 0.003249707526322631,
+    "ci95": [
+      -0.004202126723340054,
+      0.011172144055278601
+    ]
+  },
+  "weights_scaled": [
+    0.30468154268959907,
+    0.09093593720737665,
+    0.05904897633840319,
+    0.09866263487117195,
+    0.06963957831227637,
+    -0.13449063423195562
+  ],
+  "scale": [
+    0.9493472431440078,
+    1.2149506981103475,
+    1.4174546602020164,
+    1.6780598346532478,
+    0.4104147553219093,
+    0.1889743949722624
+  ]
+}

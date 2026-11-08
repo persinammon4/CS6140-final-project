@@ -1,0 +1,68 @@
+Raw rows: 135,634
+
+Raw label split:
+
+model_b: 49,785 (36.7%)
+model_a: 48,563 (35.8%)
+tie: 21,532 (15.9%)
+both_bad: 15,754 (11.6%)
+
+Decisive votes (A or B): 98,348 (72.5%). B wins 50.6% of them.
+
+Raw language mix (top 10): en 71,175, pl 13,813, und 11,835, ru 9,263, zh 6,501, de 4,311, ko 2,486, ja 2,444, fr 2,128, pt 1,684
+
+Rows flagged by each rule:
+
+duplicate ids: 0
+bad winner: 0
+missing session: 0
+empty prompt: 0
+empty response (A or B): 136
+
+Empty-response crosstab:
+
+A empty, B not: B won 49, A won 11, both_bad 8, tie 3
+B empty, A not: A won 45, both_bad 16, tie 1, B won 0
+Both empty: 3
+
+AFTER DROP
+
+Rows dropped: 136 (all from the empty-response rule)
+
+Clean rows: 135,498
+
+English rows: 71,102 (52.5% of clean)
+
+Clean language mix (n = 135,498): en 71,102, pl 13,798, und 11,822, ru 9,253, zh 6,494, de 4,306, ko 2,486, ja 2,443, fr 2,127, pt 1,684
+
+LABEL SPLIT, English:
+winner
+model_b     26052
+model_a     25553
+tie         11373
+both_bad     8124
+Name: count, dtype: int64 
+
+winner
+model_b     0.3664
+model_a     0.3594
+tie         0.1600
+both_bad    0.1143
+Name: proportion, dtype: float64 
+
+PROMPT LENGTH (chars), English:
+count     71102.000000
+mean        433.046145
+std        2146.597479
+min           1.000000
+5%           22.000000
+25%          47.000000
+50%          89.000000
+75%         212.000000
+95%        1341.000000
+99%        7247.910000
+max      119164.000000
+Name: prompt_len, dtype: float64 
+
+LONGER-RESPONSE BASELINE: 0.6002 on n = 51552
+saved (71102, 16)

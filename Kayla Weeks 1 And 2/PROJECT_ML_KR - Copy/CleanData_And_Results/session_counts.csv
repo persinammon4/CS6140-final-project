@@ -1,0 +1,17 @@
+Group,k,Sessions with Enough Votes,Votes left after K
+All,0,45778,51605
+All,1,3985,5827
+All,2,1035,1842
+All,3,412,807
+All,4,180,395
+All,5,93,215
+All,10,7,23
+All,20,0,0
+Test,0,6842,7739
+Test,1,608,897
+Test,2,164,289
+Test,3,66,125
+Test,4,30,59
+Test,5,15,29
+Test,10,0,0
+Test,20,0,0
