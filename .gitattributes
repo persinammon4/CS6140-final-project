@@ -1,2 +1,4 @@
+Kayla[[:space:]]Weeks[[:space:]]1[[:space:]]And[[:space:]]2/PROJECT_ML_KR[[:space:]]-[[:space:]]Copy/CleanData_And_Results/embeddings.npy filter=lfs diff=lfs merge=lfs -text
+Kayla[[:space:]]Weeks[[:space:]]1[[:space:]]And[[:space:]]2/PROJECT_ML_KR[[:space:]]-[[:space:]]Copy/CleanData_And_Results/clean_en.parquet filter=lfs diff=lfs merge=lfs -text
 *.parquet filter=lfs diff=lfs merge=lfs -text
 *.npy filter=lfs diff=lfs merge=lfs -text
